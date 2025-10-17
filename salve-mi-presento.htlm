@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Proposta di Collaborazione — Elite Solutions</title>
+  <meta name="description" content="Proposta di collaborazione fiduciaria di Alessandro Pindilli — Direzione strategica e gestione integrata del patrimonio.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <a href="index_it.html" class="brand-link"><h1>Elite <span>Solutions</span></h1></a>
+        <p class="role">Direzione Fiduciaria Esecutiva</p>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top:90px;">
+    <section class="section">
+      <div class="wrap">
+        <h2>Proposta di Collaborazione e Gestione Fiduciale</h2>
+        <p><strong>Alessandro Pindilli — Direttore Strategico per il Patrimonio</strong></p>
+
+        <p>Con una carriera trentennale dedicata a creare valore e fiducia per stakeholder di alto livello, metto la mia esperienza a disposizione di <strong>Elite Solutions</strong> per supportare clienti esigenti, da Forte dei Marmi al panorama europeo.</p>
+
+        <h3>La mia proposta</h3>
+        <p>Garantisco la certezza di aver trovato un referente capace di gestire ogni complessità legata alla supervisione strategica e operativa, assicurando:</p>
+
+        <ul>
+          <li>Tempi di reazione rapidi agli imprevisti</li>
+          <li>Controlli programmati senza ritardi</li>
+          <li>Massima discrezione e competenza</li>
+        </ul>
+
+        <p>L’obiettivo è offrire <strong>tranquillità totale e soddisfazione completa</strong> ai clienti, eliminando qualsiasi preoccupazione gestionale.</p>
+
+        <h3>Incontra la mia esperienza</h3>
+        <p>Sono disponibile a un incontro diretto per illustrare nel dettaglio:</p>
+
+        <ul>
+          <li>Le metodologie operative</li>
+          <li>I protocolli fiduciari esclusivi</li>
+          <li>I risultati concreti raggiunti</li>
+        </ul>
+
+        <p>Con <strong>Elite Solutions</strong>, il patrimonio dei clienti trova <em>protezione, metodo ed efficienza</em>, sotto la supervisione di un unico referente affidabile e proattivo.</p>
+
+        <div class="card contact-card" style="margin-top:40px;">
+          <h4>Contatti diretti</h4>
+          <p>📞 <a href="tel:+393885847092">+39 388 584 7092</a><br>
+             ✉️ <a href="mailto:alessandro.pindilli@gmail.com">alessandro.pindilli@gmail.com</a></p>
+          <a href="index_it.html" class="btn primary">← Torna al sito</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> Elite Solutions — Alessandro Pindilli</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date(
