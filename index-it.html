@@ -2,34 +2,35 @@
 <html lang="it">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Elite Solutions — Alessandro Pindilli</title>
-  <meta name="description" content="Elite Solutions — Direttore Strategico & Consulente d'Impresa. Gestione patrimonio, progetti di lusso e relazioni internazionali." />
-  <link rel="icon" href="images/favicon.png" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ELITE Solutions — Alessandro Pindilli</title>
+  <meta name="description" content="Direzione strategica, gestione patrimoniale e project management per residenze e hospitality di alto profilo. Il tuo unico Trusted Advisor." />
+  <meta property="og:title" content="ELITE Solutions — Alessandro Pindilli" />
+  <meta property="og:description" content="Consulenza direzionale, tutela dell’asset e gestione operativa con standard da private office." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap header-inner">
+    <div class="wrap">
       <div class="brand">
-        <a href="#home" class="brand-link"><h1>Elite <span>Solutions</span></h1></a>
-        <p class="role">Alessandro Pindilli — Direttore Strategico & Consulente d'Impresa</p>
+        <h1>ELITE <span>Solutions</span></h1>
+        <p class="role">Alessandro Pindilli — General Manager & Consulente d’Impresa</p>
       </div>
 
-      <button class="menu-toggle" aria-label="Apri menu">☰</button>
+      <button class="menu-toggle" aria-label="Apri menu" onclick="document.querySelector('.nav').classList.toggle('open')">Menu</button>
 
-      <nav class="nav" id="main-nav" aria-label="Navigazione principale">
+      <nav class="nav" aria-label="Navigazione principale">
         <a href="#home">Home</a>
         <a href="#about">Chi sono</a>
-        <a href="#services">Servizi</a>
+        <a href="#private-services">Servizi Privati</a>
+        <a href="#corporate-services">Corporate</a>
         <a href="#case-history">Case History</a>
         <a href="#contact">Contatti</a>
-
         <div class="lang-selector">
-          <label for="language-select-it" class="sr-only">Lingua</label>
-          <select id="language-select-it" onchange="location.href=this.value">
+          <label for="language-select-it">Lang:</label>
+          <select id="language-select-it" onchange="window.location.href = this.value;">
             <option value="index.html">EN</option>
-            <option value="index_it.html" selected>ITA</option>
+            <option value="index-it.html" selected>ITA</option>
           </select>
         </div>
       </nav>
@@ -37,142 +38,193 @@
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="hero-slideshow" aria-hidden="true">
-        <div class="slide" style="background-image:url('images/seychelles.jpg')"></div>
-        <div class="slide" style="background-image:url('images/pexels-tatianasyrikova-3933504.jpg')"></div>
+    <!-- HERO -->
+    <section id="home" class="hero" aria-label="Sezione introduttiva">
+      <div class="hero-images">
+        <div class="hero-img" style="background-image:url('seychelles.jpg');"></div>
+        <div class="hero-img" style="background-image:url('pexels-tatianasyrikova-3933504.jpg');"></div>
       </div>
-
-      <div class="hero-content wrap">
-        <h2>Il tuo patrimonio non cerca un manager — ha bisogno di un Regista Strategico.</h2>
-        <p class="lead">Visione strategica, rigore operativo e un network internazionale per progetti di lusso che ridefiniscono il successo.</p>
-
+      <div class="hero-content">
+        <h2>Il tuo patrimonio non cerca un manager. Ha bisogno di un Regista Strategico.</h2>
+        <p class="lead">Visione, disciplina operativa e una rete internazionale per progetti residenziali e hospitality che definiscono nuovi standard.</p>
         <div class="hero-ctas">
           <a class="btn primary" href="#contact">Contattami</a>
-          <a class="btn ghost" href="files/Curriculum_Vitae_Alessandro_Pindilli.pdf" target="_blank" rel="noopener">Scarica CV (PDF)</a>
+          <a class="btn ghost" href="Curriculum Vitae di Alessandro Pindilli ok.pdf" target="_blank" rel="noopener">Scarica CV (PDF)</a>
+          <a class="btn whatsapp" href="https://wa.me/393885847092?text=Ciao%20Alessandro%2C%20ti%20scrivo%20dal%20sito%20ELITE%20Solutions." target="_blank" rel="noopener" aria-label="Apri WhatsApp">WhatsApp</a>
         </div>
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="section about">
-      <div class="wrap grid-2 reveal">
+      <div class="wrap grid-2">
         <div class="card bio">
           <h3>Chi sono</h3>
-          <img src="images/alessandro-portrait.jpg" alt="Alessandro Pindilli ritratto" class="portrait" />
-          <p>Manager esecutivo e consulente d'impresa con oltre 30 anni di esperienza nel lusso, hospitality, eventi e sviluppo internazionale. Coordino progetti ad alto valore, con discrezione e risultati misurabili.</p>
-          <p class="muted">Rapidità analitica, empatia strategica e rigore operativo.</p>
+          <img src="alessandro-portrait.jpg" alt="Ritratto di Alessandro Pindilli" />
+          <p>Executive Manager e Consulente con oltre 25 anni di esperienza in direzione generale, sviluppo internazionale e gestione di asset di pregio. Dall’industria al real estate, ho guidato progetti in più di 35 Paesi, con focus su Asia e Medio Oriente.</p>
+          <p class="muted">Metodo, riservatezza e attenzione maniacale ai dettagli: ogni incarico deve funzionare alla perfezione e raccontare un’identità.</p>
         </div>
 
         <div class="card quick">
-          <h4>Dettagli</h4>
+          <h4>Dettagli rapidi</h4>
           <ul class="plain">
-            <li><strong>Località:</strong> Marina di Massa (MS)</li>
-            <li><strong>Telefono:</strong> <a href="tel:+393885847092">+39 388 584 7092</a></li>
+            <li><strong>Base:</strong> Marina di Massa (MS)</li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/393885847092" target="_blank" rel="noopener">scrivimi su WhatsApp</a></li>
             <li><strong>Email:</strong> <a href="mailto:alessandro.pindilli@gmail.com">alessandro.pindilli@gmail.com</a></li>
-            <li><strong>Download CV:</strong> <a href="files/Curriculum_Vitae_Alessandro_Pindilli.pdf" target="_blank" rel="noopener">PDF</a></li>
+            <li><strong>CV:</strong> <a href="Curriculum Vitae di Alessandro Pindilli ok.pdf" target="_blank" rel="noopener">Scarica il PDF</a></li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section id="services" class="section services">
-      <div class="wrap reveal">
-        <h3>Servizi</h3>
-        <div class="grid-3">
-          <article class="service-card">
-            <h4>Project Management di Lusso</h4>
-            <p>Direzione e coordinamento per eventi, aperture e progetti su misura.</p>
-          </article>
-          <article class="service-card">
-            <h4>Servizi per Clienti Privati</h4>
-            <p>Gestione proprietà, concierge e rappresentanza fiduciaria per famiglie facoltose.</p>
-          </article>
-          <article class="service-card">
-            <h4>Relazioni Internazionali</h4>
-            <p>Supporto per ingresso nei mercati esteri, ricerca partner e trattativa commerciale.</p>
-          </article>
+    <!-- PRIVATE SERVICES -->
+    <section id="private-services" class="section packages">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>Servizi per Clienti Privati</h2>
+          <p>Soluzioni su misura per la tutela e la valorizzazione del patrimonio immobiliare. Un unico referente, dalla supervisione quotidiana alla direzione strategica.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="bundle-card">
+            <img src="private-service-1.jpg" alt="Controllo e Supervisione" class="bundle-image">
+            <h3>Guardian</h3>
+            <ul>
+              <li>Ispezioni programmate e reportistica</li>
+              <li>Gestione chiavi e accessi</li>
+              <li>Presidio fornitori qualificati</li>
+            </ul>
+            <a href="#contact" class="btn primary">Scopri di più</a>
+          </div>
+
+          <div class="bundle-card featured">
+            <img src="private-service-2.jpg" alt="Gestione Attiva e Manutenzione" class="bundle-image">
+            <h3>Concierge</h3>
+            <ul>
+              <li>Tutto ciò che include Guardian</li>
+              <li>Manutenzione ordinaria e calendarizzata</li>
+              <li>Gestione personale domestico</li>
+            </ul>
+            <a href="#contact" class="btn primary">Scopri di più</a>
+          </div>
+
+          <div class="bundle-card">
+            <img src="private-service-3.jpg" alt="Gestione Strategica dell’Asset" class="bundle-image">
+            <h3>Director</h3>
+            <ul>
+              <li>Tutto ciò che include Concierge</li>
+              <li>Strategia di valorizzazione dell’immobile</li>
+              <li>Rappresentanza fiduciaria</li>
+            </ul>
+            <a href="#contact" class="btn primary">Scopri di più</a>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- CORPORATE -->
+    <section id="corporate-services" class="corporate-section">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>Soluzioni Corporate & Hospitality</h2>
+          <p>Supporto operativo e direzionale per hotel, resort e aziende durante l’operatività e la chiusura stagionale. Standard da private office, esecuzione senza frizioni.</p>
+        </div>
+
+        <div class="service-checklist" role="list">
+          <label><input type="checkbox" disabled> Sicurezza e Sorveglianza</label>
+          <label><input type="checkbox" disabled> Manutenzione impianti</label>
+          <label><input type="checkbox" disabled> Cura della struttura e pulizie</label>
+          <label><input type="checkbox" disabled> Gestione amministrativa</label>
+          <label><input type="checkbox" disabled> Progetti di rinnovo off-season</label>
+        </div>
+
+        <div style="text-align:center; margin-top:34px;">
+          <a href="#contact" class="btn primary">Richiedi una consulenza</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE HISTORY -->
     <section id="case-history" class="section case-history">
-      <div class="wrap reveal">
+      <div class="wrap">
         <h3>Case History</h3>
         <div class="grid-3">
-          <div class="case">
-            <h4>Evento di Brand — Capri</h4>
-            <p>Direzione strategica e logistica per lancio brand in location esclusiva.</p>
+          <div class="service">
+            <h4>Hospitality di alta gamma</h4>
+            <p>Direzione strategica e logistica per progetti e attivazioni di brand in location come Capri, Costa Smeralda, Saint-Tropez, Courchevel e Seychelles.</p>
           </div>
-          <div class="case">
-            <h4>Portfolio Residenziale — Forte dei Marmi</h4>
-            <p>Gestione completa e coordinamento manutentivo di ville stagionali.</p>
+          <div class="service">
+            <h4>Residenze di prestigio</h4>
+            <p>Gestione “chiavi in mano” di proprietà esclusive a Cala di Volpe (Porto Cervo), Forte dei Marmi e lungo la Versilia.</p>
           </div>
-          <div class="case">
-            <h4>Ospitalità — Seychelles</h4>
-            <p>Coordinamento operativo e gestione stagionale boutique resort.</p>
+          <div class="service">
+            <h4>Project & Asset Management</h4>
+            <p>Pianificazione, controllo qualità e tutela dell’investimento con metriche trasparenti e reportistica esecutiva.</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- CV SNAPSHOT -->
+    <section id="cv" class="section cv-snapshot">
+      <div class="wrap grid-2">
+        <div>
+          <h3>Una sintesi del mio percorso</h3>
+          <p class="lead">Direzione generale, sviluppo internazionale, negoziazione e gestione di team multiculturali. Missione: proteggere e valorizzare ciò che conta.</p>
+          <a class="btn primary" href="Curriculum Vitae di Alessandro Pindilli ok.pdf" target="_blank" rel="noopener">Scarica CV (PDF)</a>
+          <a class="btn ghost" href="#contact" style="color:var(--accent); border-color:var(--accent);">Proposta fiduciaria</a>
+        </div>
+
+        <div class="cv-box">
+          <h4>Competenze chiave</h4>
+          <ul>
+            <li>Direzione generale e strategica</li>
+            <li>Internazionalizzazione e sviluppo mercati</li>
+            <li>Negoziazione e diplomazia economica</li>
+          </ul>
+
+          <h4 style="margin-top: 20px;">Lingue</h4>
+          <ul class="plain" style="margin:0; padding:0; list-style:none;">
+            <li style="padding: 2px 0;"><strong>Italiano:</strong> madrelingua</li>
+            <li style="padding: 2px 0;"><strong>Inglese:</strong> fluente</li>
+            <li style="padding: 2px 0;"><strong>Francese:</strong> base</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact" class="section contact">
-      <div class="wrap grid-2 reveal">
+      <div class="wrap grid-2">
         <div class="card contact-card">
-          <h3>Contatti</h3>
-          <p>Per collaborazioni, proposte fiduciaria o preventivi scrivi direttamente o usa il form sottostante.</p>
-          <form id="contactFormIt" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <h3>Contattami</h3>
+          <p class="muted">Preferisci un contatto riservato? Scrivimi su WhatsApp: ti richiamo io.</p>
+          <p><a class="btn whatsapp" href="https://wa.me/393885847092?text=Ciao%20Alessandro%2C%20ti%20scrivo%20dal%20sito%20ELITE%20Solutions." target="_blank" rel="noopener">Apri WhatsApp</a></p>
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
             <input type="text" name="name" placeholder="Nome" required />
             <input type="email" name="email" placeholder="Email" required />
             <textarea name="message" placeholder="Messaggio" rows="5" required></textarea>
-            <div class="form-actions">
-              <button class="btn primary" type="submit">Invia</button>
-              <button class="btn ghost" type="reset">Reset</button>
-            </div>
+            <button class="btn primary" type="submit">Invia</button>
           </form>
         </div>
 
         <div class="card images">
-          <div class="img" style="background-image:url('images/yacht-deck-luxury.jpg')"></div>
+          <div class="img" style="background-image:url('yacht-deck-luxury.jpg');"></div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>© <span id="year"></span> Elite Solutions — Alessandro Pindilli</p>
-    </div>
-    <button id="backToTopIt" class="back-to-top" aria-label="Torna su">↑</button>
+    <div class="wrap"><p>© <span id="year"></span> ELITE Solutions — Alessandro Pindilli</p></div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Mobile menu
-    const toggleIt = document.querySelector('#main-nav') ? document.querySelector('.menu-toggle') : null;
-    const navIt = document.getElementById('main-nav');
-    if (toggleIt) toggleIt.addEventListener('click', () => navIt.classList.toggle('open'));
-
-    // Smooth anchor scroll with offset
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (!href || href === '#') return;
-        const target = document.querySelector(href);
-        if (!target) return;
-        e.preventDefault();
-        const headerOffset = document.querySelector('.site-header').offsetHeight + 10;
-        const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
-        window.scrollTo({ top: elementPosition - headerOffset, behavior: 'smooth' });
-      });
+    // chiudi il menu quando clicchi un link
+    document.querySelectorAll('.nav a').forEach(a=>{
+      a.addEventListener('click', ()=>document.querySelector('.nav').classList.remove('open'));
     });
-
-    // Back to top
-    const backBtnIt = document.getElementById('backToTopIt');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 600) backBtnIt.classList.add('visible'); else backBtnIt.classList.remove('visible');
-    });
-    backBtnIt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   </script>
 </body>
 </html>
