@@ -1,138 +1,144 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ELITE Solutions — Guardian (L1)</title>
-  <meta name="description" content="Guardian (L1) di ELITE Solutions: supervisione essenziale e affidabile con coordinamento rapido per residenze di pregio.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html { scroll-behavior: smooth; }
-    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELITE Solutions | Guardian Service</title>
+  <meta name="description" content="Il servizio Guardian di ELITE Solutions garantisce la custodia e supervisione delle proprietà durante la tua assenza, con ispezioni e manutenzione programmata.">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="bg-neutral-50 text-neutral-900">
-  <!-- Header -->
-  <header class="sticky top-0 z-50 backdrop-blur bg-white/90 border-b border-neutral-200">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="../index_it.html" class="flex items-center gap-2 font-semibold tracking-wide">
-        <span class="inline-block h-8 w-8 rounded-xl bg-neutral-900 text-white grid place-items-center">E</span>
-        <span class="text-lg">ELITE <span class="font-light">Solutions</span></span>
-      </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#overview" class="hover:text-neutral-600">Panoramica</a>
-        <a href="#features" class="hover:text-neutral-600">Cosa include</a>
-        <a href="#comparison" class="hover:text-neutral-600">Confronto</a>
-        <a href="#faq" class="hover:text-neutral-600">FAQ</a>
-        <a href="#contact" class="hover:text-neutral-600">Contatti</a>
+<body>
+
+  <!-- HEADER -->
+  <header class="header fade-in">
+    <div class="container">
+      <a href="index_it.html" class="logo">ELITE <span>Solutions</span></a>
+      <nav class="nav">
+        <ul>
+          <li><a href="index_it.html">Home</a></li>
+          <li><a href="#guardian" class="active">Guardian</a></li>
+          <li><a href="privacy_it.html">Privacy</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
       </nav>
-      <div class="flex items-center gap-3">
-        <a href="guardian_en.html" class="text-sm px-3 py-1.5 rounded-lg border border-neutral-300 hover:bg-neutral-100">EN</a>
-        <a href="#contact" class="text-sm px-4 py-2 rounded-xl bg-neutral-900 text-white hover:bg-black">Richiedi preventivo</a>
-      </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="overview" class="py-20 lg:py-28">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 items-center">
-      <div class="lg:col-span-7">
-        <p class="uppercase tracking-widest text-xs text-neutral-500">Bundle L1</p>
-        <h1 class="mt-2 text-4xl sm:text-5xl font-semibold">Guardian — Supervisione Essenziale</h1>
-        <p class="mt-5 text-neutral-700 max-w-2xl">
-          Guardian (L1) è il nostro pacchetto base, pensato per proprietari che desiderano un controllo costante e un coordinamento rapido, senza la necessità di un team residenziale fisso. Garantiamo che la tua proprietà resti sicura, curata e pronta per accogliere ospiti o proprietari.
-        </p>
-        <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#features" class="px-4 py-2 rounded-xl border border-neutral-300 hover:bg-neutral-100">Scopri cosa include</a>
-          <a href="#contact" class="px-4 py-2 rounded-xl bg-neutral-900 text-white hover:bg-black">Contattaci</a>
+  <!-- GOOGLE TRANSLATE MENU -->
+  <div id="google_translate_element" class="translate-menu"></div>
+
+  <!-- HERO SECTION -->
+  <section id="guardian" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container slide-up">
+      <h1>Servizio Guardian</h1>
+      <p>La tua proprietà sempre sotto controllo. Sicurezza, manutenzione e presenza costante anche quando sei lontano.</p>
+    </div>
+  </section>
+
+  <!-- INTRO SECTION -->
+  <section class="section fade-in">
+    <div class="container">
+      <h2>Supervisione Totale</h2>
+      <p class="section-subtitle">Il servizio Guardian è pensato per chi desidera serenità e controllo continuo della propria proprietà, in Italia o all’estero.</p>
+      <p>Monitoriamo ogni aspetto della tua casa: impianti, pulizie, giardino, piscina e sicurezza. Tutte le ispezioni vengono documentate e archiviate digitalmente per garantire trasparenza e affidabilità.</p>
+    </div>
+  </section>
+
+  <!-- SERVIZI GUARDIAN -->
+  <section class="services section fade-in">
+    <div class="container">
+      <h2>Cosa Include il Servizio Guardian</h2>
+      <div class="service-grid">
+        <div class="service-card hover-rise">
+          <h3>Ispezioni Programmate</h3>
+          <p>Visite regolari per verificare lo stato della proprietà, impianti e sistemi di sicurezza. Report fotografico dopo ogni controllo.</p>
         </div>
-        <ul class="mt-8 grid sm:grid-cols-2 gap-3 text-sm text-neutral-700">
-          <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-neutral-900"></span>Ispezioni programmate con report foto/video</li>
-          <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-neutral-900"></span>Custodia chiavi e accesso verificato per fornitori</li>
-          <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-neutral-900"></span>Gestione rapida di emergenze e interventi tecnici</li>
-          <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-neutral-900"></span>Controllo allarmi e monitoraggio utilities di base</li>
+        <div class="service-card hover-rise">
+          <h3>Gestione Manutenzioni</h3>
+          <p>Coordinamento di tecnici e fornitori per interventi ordinari e straordinari, con verifica diretta della qualità del lavoro.</p>
+        </div>
+        <div class="service-card hover-rise">
+          <h3>Gestione Emergenze</h3>
+          <p>Intervento immediato in caso di guasti o imprevisti. Disponibilità H24 con protocollo di contatto diretto con il proprietario.</p>
+        </div>
+        <div class="service-card hover-rise">
+          <h3>Reportistica e Trasparenza</h3>
+          <p>Ogni azione è tracciata: ricevi report dettagliati, foto, video e check-list delle attività completate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFFERENZA ELITE -->
+  <section class="about section slide-up">
+    <div class="container">
+      <h2>Perché Scegliere ELITE Solutions</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Il nostro approccio Guardian non è solo sorveglianza, ma una gestione intelligente e preventiva.  
+          Ogni proprietà è seguita da un responsabile dedicato che monitora con protocolli e standard internazionali.</p>
+          <p>Offriamo la sicurezza di sapere che la tua casa, yacht o residenza è curata nei minimi dettagli anche quando non sei presente.  
+          In ogni momento puoi ricevere aggiornamenti e richiedere interventi aggiuntivi in tempo reale.</p>
+        </div>
+        <div class="about-image">
+          <img src="assets/images/guardian.jpg" alt="Guardian Service ELITE Solutions">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta section fade-in">
+    <div class="container">
+      <h2>Il tuo Guardian Personale</h2>
+      <p>Scopri come ELITE Solutions può garantire tranquillità e sicurezza alla tua proprietà.</p>
+      <a href="#contatti" class="btn gold-btn">Richiedi una Consulenza</a>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section id="contatti" class="contact section slide-up">
+    <div class="container">
+      <h2>Contattaci</h2>
+      <form action="thanks.html" method="get" class="contact-form">
+        <input type="text" name="nome" placeholder="Nome completo" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="messaggio" placeholder="Richiedi informazioni sul Servizio Guardian..." required></textarea>
+        <button type="submit" class="btn">Invia</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <h3>ELITE <span>Solutions</span></h3>
+        <p>Guardian Service, Property Management e Lifestyle Assistance per una vita senza pensieri.</p>
+      </div>
+      <div class="footer-right">
+        <ul class="footer-links">
+          <li><a href="index_it.html">Home</a></li>
+          <li><a href="privacy_it.html">Privacy</a></li>
+          <li><a href="#contatti">Contatti</a></li>
         </ul>
       </div>
-      <div class="lg:col-span-5">
-        <div class="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
-          <h2 class="text-lg font-semibold">Dettagli principali</h2>
-          <dl class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-            <div><dt class="text-neutral-500">Livello bundle</dt><dd class="font-medium">L1 — Guardian</dd></div>
-            <div><dt class="text-neutral-500">Focus</dt><dd class="font-medium">Sicurezza, manutenzione e coordinamento</dd></div>
-            <div><dt class="text-neutral-500">Reportistica</dt><dd class="font-medium">Foto/Video + registro interventi</dd></div>
-            <div><dt class="text-neutral-500">Disponibilità</dt><dd class="font-medium">Orari lavorativi + reperibilità su chiamata*</dd></div>
-          </dl>
-          <p class="mt-4 text-xs text-neutral-500">* La reperibilità varia in base alla località e alla stagione e viene definita durante l’onboarding.</p>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <!-- Features -->
-  <section id="features" class="border-t border-neutral-200 bg-white py-16">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-semibold">Cosa include Guardian (L1)</h2>
-      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <article class="rounded-2xl border border-neutral-200 p-6 bg-neutral-50">
-          <h3 class="font-medium">Ispezioni Programmate</h3>
-          <p class="mt-2 text-sm text-neutral-700">Controlli regolari di ingressi, terrazze, locali tecnici e perimetro. Ogni visita documentata con foto/video.</p>
-        </article>
-        <article class="rounded-2xl border border-neutral-200 p-6 bg-neutral-50">
-          <h3 class="font-medium">Custodia Chiavi</h3>
-          <p class="mt-2 text-sm text-neutral-700">Custodia sicura con protocolli di doppio controllo. Accesso verificato per ospiti e fornitori autorizzati.</p>
-        </article>
-        <article class="rounded-2xl border border-neutral-200 p-6 bg-neutral-50">
-          <h3 class="font-medium">Allarmi e Utilities</h3>
-          <p class="mt-2 text-sm text-neutral-700">Contatto diretto in caso di allarme e controllo base di acqua, gas ed elettricità per rilevare anomalie.</p>
-        </article>
-        <article class="rounded-2xl border border-neutral-200 p-6 bg-neutral-50">
-          <h3 class="font-medium">Gestione Emergenze</h3>
-          <p class="mt-2 text-sm text-neutral-700">Classificazione e coordinamento degli interventi tecnici affidabili, con aggiornamenti fino alla risoluzione.</p>
-        </article>
-        <article class="rounded-2xl border border-neutral-200 p-6 bg-neutral-50">
-          <h3 class="font-medium">Posta e Consegne</h3>
-          <p class="mt-2 text-sm text-neutral-700">Ritiro e custodia sicura di posta e pacchi, con possibilità di inoltro su richiesta.</p>
-        </article>
-        <article class="rounded-2xl border border-neutral-200 p-6 bg-neutral-50">
-          <h3 class="font-medium">Preparazione all’Arrivo</h3>
-          <p class="mt-2 text-sm text-neutral-700">Verifiche prima dell’arrivo, impostazioni di clima e luci, apertura base per accogliere ospiti o proprietari.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="border-t border-neutral-200 bg-neutral-50 py-16">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 items-center">
-      <div class="lg:col-span-7">
-        <h2 class="text-2xl font-semibold">Richiedi il pacchetto Guardian (L1)</h2>
-        <p class="mt-2 text-neutral-700 max-w-2xl">Raccontaci le caratteristiche della tua proprietà e la frequenza di supervisione desiderata. Riceverai una proposta chiara e dettagliata entro 1–2 giorni lavorativi.</p>
-        <div class="mt-6 grid sm:grid-cols-2 gap-3 text-sm">
-          <a href="mailto:alessandro.pindilli@gmail.com?subject=Richiesta%20ELITE%20Solutions%20—%20Guardian%20(L1)" class="px-4 py-3 rounded-xl bg-neutral-900 text-white hover:bg-black text-center">Invia email</a>
-          <a href="tel:+393885847092" class="px-4 py-3 rounded-xl border border-neutral-300 hover:bg-white text-center">Chiama / WhatsApp: +39 388 584 7092</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="border-t border-neutral-200 bg-white py-10">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-sm text-neutral-600 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <p>© <span id="year"></span> ELITE Solutions. Tutti i diritti riservati.</p>
-      <nav class="flex gap-4">
-        <a href="../privacy_terms/privacy_it.html" class="hover:text-neutral-900">Privacy</a>
-        <a href="../privacy_terms/terms_it.html" class="hover:text-neutral-900">Termini</a>
-        <a href="#contact" class="hover:text-neutral-900">Contatti</a>
-      </nav>
-    </div>
+    <p class="footer-bottom">© 2025 ELITE Solutions. Tutti i diritti riservati.</p>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+  <!-- GOOGLE TRANSLATE SCRIPT -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {pageLanguage: 'it', includedLanguages: 'en,fr,de,es,pt,ru,zh,ar,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE},
+        'google_translate_element'
+      );
+    }
   </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>
