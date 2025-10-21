@@ -1,89 +1,72 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ELITE Solutions | Messaggio Inviato</title>
-  <meta name="description" content="Conferma di invio messaggio - ELITE Solutions. Ti ringraziamo per averci contattato.">
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grazie — ELITE Solutions</title>
+  <meta name="description" content="La tua richiesta è stata inviata con successo. ELITE Solutions ti contatterà al più presto per offrirti una consulenza personalizzata.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-
-  <!-- HEADER -->
-  <header class="header fade-in">
+  <header class="site-header">
     <div class="container">
-      <a href="index_it.html" class="logo">ELITE <span>Solutions</span></a>
-      <nav class="nav">
+      <h1 class="logo">ELITE Solutions</h1>
+      <nav class="main-nav">
         <ul>
-          <li><a href="index_it.html">Home</a></li>
-          <li><a href="guardian_it.html">Guardian</a></li>
-          <li><a href="privacy_it.html">Privacy</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bundle_it.html">Pacchetti</a></li>
+          <li><a href="privacy_terms/privacy_it.html">Privacy</a></li>
+          <li><a href="privacy_terms/terms_it.html">Termini</a></li>
+          <li><a href="contatti.html" class="active">Contatti</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- GOOGLE TRANSLATE MENU -->
-  <div id="google_translate_element" class="translate-menu"></div>
+  <main class="container fade-in" style="text-align:center; padding:6rem 1rem;">
+    <h2>🎉 Grazie per averci contattato!</h2>
+    <p>Abbiamo ricevuto la tua richiesta e ti risponderemo entro breve.</p>
 
-  <!-- HERO / GRAZIE -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content container slide-up">
-      <h1>Grazie per averci contattato</h1>
-      <p>Il tuo messaggio è stato inviato correttamente.<br>
-      Ti risponderemo al più presto.</p>
-      <a href="index_it.html" class="btn gold-btn">Torna alla Home</a>
-    </div>
-  </section>
+    <section class="next-steps" style="margin-top:2rem;">
+      <h3>Cosa succede adesso</h3>
+      <p>Il nostro team analizzerà la tua richiesta e ti proporrà la soluzione più adatta tra i nostri pacchetti di supervisione.</p>
+      <a href="bundles/guardian_it.html" class="btn-primary" style="margin-top:1.2rem;">Scopri il pacchetto Guardian</a>
+    </section>
 
-  <!-- SEZIONE FOLLOW-UP -->
-  <section class="section fade-in">
-    <div class="container" style="max-width: 800px;">
-      <h2>Cosa succede adesso</h2>
-      <p>Abbiamo ricevuto il tuo messaggio e uno dei nostri consulenti ti contatterà entro 24 ore.  
-      Nel frattempo puoi esplorare i nostri servizi o conoscere meglio il programma <strong>Guardian</strong>.</p>
-      <div style="margin-top:2rem;">
-        <a href="guardian_it.html" class="btn">Scopri il Servizio Guardian</a>
-      </div>
-    </div>
-  </section>
+    <p style="margin-top:3rem;">Oppure torna alla <a href="index.html" class="gold-link">Home Page</a>.</p>
+  </main>
 
-  <!-- CTA -->
-  <section class="cta section slide-up">
+  <footer class="site-footer">
     <div class="container">
-      <h2>ELITE Solutions</h2>
-      <p>Gestione di proprietà e lifestyle di lusso con precisione, discrezione e risultati garantiti.</p>
-      <a href="index_it.html#contatti" class="btn gold-btn">Contattaci Ancora</a>
+      <p>© 2025 ELITE Solutions —
+        <a href="privacy_terms/privacy_it.html">Privacy</a> ·
+        <a href="privacy_terms/terms_it.html">Termini</a> ·
+        <a href="contatti.html">Contatti</a>
+      </p>
     </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-left">
-        <h3>ELITE <span>Solutions</span></h3>
-        <p>Grazie per la tua fiducia. La tua tranquillità è la nostra priorità.</p>
-      </div>
-      <div class="footer-right">
-        <ul class="footer-links">
-          <li><a href="index_it.html">Home</a></li>
-          <li><a href="guardian_it.html">Guardian</a></li>
-          <li><a href="privacy_it.html">Privacy</a></li>
-        </ul>
-      </div>
-    </div>
-    <p class="footer-bottom">© 2025 ELITE Solutions. Tutti i diritti riservati.</p>
   </footer>
 
-  <!-- GOOGLE TRANSLATE SCRIPT -->
+  <!-- 🌐 Traduttore Multilingua -->
+  <div id="translate-selector" style="
+    position: fixed; bottom: 18px; right: 18px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    padding: 6px 10px; font-size: 14px; z-index: 9999;">
+    <span style="margin-right:6px;">🌐 Language:</span>
+    <div id="google_translate_element" style="display:inline-block;"></div>
+  </div>
+
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement(
-        {pageLanguage: 'it', includedLanguages: 'en,fr,de,es,pt,ru,zh,ar,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE},
+        {pageLanguage: 'it', includedLanguages: 'en,fr,de,es,ru,zh,ar,pt,ja'},
         'google_translate_element'
       );
     }
   </script>
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></scr_
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
