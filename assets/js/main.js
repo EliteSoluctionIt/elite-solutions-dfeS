@@ -1,21 +1,34 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Grazie — ELITE Solutions</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body class="bg-neutral-50 text-neutral-900">
-  <main class="min-h-screen flex flex-col items-center justify-center text-center px-6">
-    <h1 class="text-4xl font-semibold mb-4">Grazie per averci contattato</h1>
-    <p class="text-neutral-700 max-w-lg">
-      Abbiamo ricevuto la tua richiesta e ti risponderemo entro breve.  
-      <br>Nel frattempo puoi tornare alla home page.
-    </p>
-    <a href="index_it.html" class="mt-8 inline-block px-6 py-3 rounded-xl bg-neutral-900 text-white hover:bg-black">
-      Torna alla Home
-    </a>
-  </main>
-</body>
-</html>
+/* ================================
+   ELITE SOLUTIONS — MAIN.JS
+=================================*/
+
+// Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) target.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+// Year auto-update in footer
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// Fade-in on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+});
+document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+
+// Header scroll shadow
+window.addEventListener("scroll", () => {
+  const header = document.querySelector(".site-header");
+  if (window.scrollY > 20) header.classList.add("scrolled");
+  else header.classList.remove("scrolled");
+});
